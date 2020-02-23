@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ts-optchain-codemod Simple test: Simple test 1`] = `
+
+import oc from 'ts-optchain'
+oc(one).two('default')
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+one?.two?.('default');
+"
+`;
